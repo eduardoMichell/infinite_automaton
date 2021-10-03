@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="br.univali.edu.infinite_automation.screen.AutomatonScreen">
+    <children>
+        <AnchorPane fx:id="anchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="analyze" layoutX="445.0" layoutY="204.0" mnemonicParsing="false" onAction="#onAnalyzeAction" onMouseClicked="#onAnalyzeClicked" text="Analisar" />
+                <Button fx:id="erase" layoutX="521.0" layoutY="204.0" mnemonicParsing="false" onAction="#onEraseAction" onMouseClicked="#onEraseClicked" text="Limpar" />
+                <TextArea fx:id="campA" layoutX="22.0" layoutY="14.0" prefHeight="181.0" prefWidth="595.0" />
+                <TextArea fx:id="campB"  editable="false" layoutX="22.0" layoutY="238.0" prefHeight="153.0" prefWidth="595.0" />
+                <Text fx:id="text" layoutX="22.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tokens" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
