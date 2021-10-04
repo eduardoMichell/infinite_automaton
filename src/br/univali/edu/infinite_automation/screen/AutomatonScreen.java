@@ -99,6 +99,7 @@ public class AutomatonScreen {
     private String getResult(Automaton automaton) {
         ArrayList<ArrayList<String>> sequences = getSequences();
         String result = "";
+
         for (int i = 0; i < sequences.size(); i++) {
             result += automaton.genericImplementation(sequences.get(i)) + "\n";
         }
@@ -108,29 +109,25 @@ public class AutomatonScreen {
 
     private ArrayList<ArrayList<String>> getSequences() {
         String[] sequences = this.campA.getText().split(" ");
-        ArrayList<String> op = new ArrayList<>(Arrays.asList("+", "-", "*", "/", "%"));
 
         ArrayList<ArrayList<String>> result = new ArrayList<>();
         ArrayList<String> helper = new ArrayList<>();
 
         for (String sequence : sequences) {
             for (int j = 0; j < sequence.length(); j++) {
-//                if(op.contains(Character.toString(sequence.charAt(j)))){
-//                    result.add(helper);
-//                    helper.add("$");
-//                    helper = new ArrayList<>();
-//                    helper.add(Character.toString(sequence.charAt(j)));
-//                    break;
-//                }
                 helper.add(Character.toString(sequence.charAt(j)));
             }
+
+
             helper.add("$");
             result.add(helper);
             helper = new ArrayList<>();
 
         }
+        System.out.println(result);
         return result;
     }
+
 
 
     @FXML
