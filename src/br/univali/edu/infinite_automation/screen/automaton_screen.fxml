@@ -14,7 +14,7 @@
                 <Button fx:id="analyze" layoutX="445.0" layoutY="204.0" mnemonicParsing="false" onAction="#onAnalyzeAction" onMouseClicked="#onAnalyzeClicked" text="Analisar" />
                 <Button fx:id="erase" layoutX="521.0" layoutY="204.0" mnemonicParsing="false" onAction="#onEraseAction" onMouseClicked="#onEraseClicked" text="Limpar" />
                 <TextArea fx:id="campA" layoutX="22.0" layoutY="14.0" prefHeight="181.0" prefWidth="595.0" />
-                <TextArea fx:id="campB"  editable="false" layoutX="22.0" layoutY="238.0" prefHeight="153.0" prefWidth="595.0" />
+                <TextArea fx:id="campB"  editable="false" layoutX="22.0" layoutY="238.0" prefHeight="253.0" prefWidth="595.0" />
                 <Text fx:id="text" layoutX="22.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tokens" />
             </children>
         </AnchorPane>

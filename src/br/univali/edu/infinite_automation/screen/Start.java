@@ -17,7 +17,7 @@ public class Start extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Pane root = FXMLLoader.load(getClass().getResource("automaton_screen.fxml"));
-        Scene scene = new Scene(root, 640, 400);
+        Scene scene = new Scene(root, 640, 500);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Automaton");
         primaryStage.show();
